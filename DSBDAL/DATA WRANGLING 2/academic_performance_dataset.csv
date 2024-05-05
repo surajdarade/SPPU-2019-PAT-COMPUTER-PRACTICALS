@@ -1,0 +1,21 @@
+Student ID,Gender,Age,Class,Math Score,Science Score,English Score,Attendance,Study Hours,Extra-curricular,Overall Performance
+1,Male,50.0,12,200.0,78.0,92.0,90.0,20.0,Football,3.5
+2,Female,17.0,1,90.0,,88.0,,15.0,Drama Club,3.8
+3,Male,19.0,13,78.0,75.0,,85.0,,Chess Club,3.2
+4,Female,,12,,82.0,94.0,92.0,22.0,Basketball,
+5,Male,17.0,11,80.0,85.0,85.0,88.0,16.0,Music Band,3.6
+6,Female,18.0,12,108.0,,90.0,,18.0,Football,3.9
+7,Male,,13,75.0,80.0,,90.0,,Drama Club,3.4
+8,Female,17.0,2,,88.0,88.0,92.0,20.0,Chess Club,
+9,Male,19.0,12,92.0,92.0,92.0,85.0,15.0,Basketball,4.0
+10,Female,18.0,13,86.0,78.0,85.0,88.0,18.0,Music Band,3.7
+11,Male,,11,90.0,,80.0,92.0,22.0,Football,3.9
+12,Female,62.0,12,85.0,90.0,94.0,90.0,16.0,Drama Club,3.5
+13,Male,17.0,13,,75.0,85.0,85.0,18.0,Chess Club,
+14,Female,18.0,11,192.0,85.0,88.0,,20.0,Basketball,3.8
+15,Male,48.0,20,82.0,,92.0,90.0,15.0,Music Band,3.3
+16,Female,17.0,13,90.0,80.0,90.0,88.0,18.0,Football,3.7
+17,Male,,11,78.0,78.0,92.0,92.0,22.0,Drama Club,3.9
+18,Female,18.0,12,85.0,92.0,85.0,85.0,16.0,Chess Club,3.6
+19,Male,19.0,13,92.0,88.0,,90.0,18.0,Basketball,3.8
+20,Female,17.0,11,88.0,82.0,88.0,,,Music Band,

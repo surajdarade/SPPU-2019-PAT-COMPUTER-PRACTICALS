@@ -1,0 +1,1 @@
+Text analytics involves analyzing and processing text data to extract meaningful insights. It includes tasks such as tokenization, POS tagging, stop words removal, stemming, lemmatization, and more. Text analytics is widely used in natural language processing (NLP), sentiment analysis, information retrieval, and other applications.
