@@ -56,13 +56,13 @@ knowledge_base = {
         "ENTC Engineering: 99.2",
     ], 
 
-    "When do college admissions start?": [
+    "when do college admissions start?": [
         "Admissions generally start around August",
     ],
    
 }
 
-st.header("College Enquiry Rule Based Chatbot")
+st.header("College Enquiry Chatbot")
 
 def respond(input: str):
     if (input in knowledge_base):
@@ -71,16 +71,11 @@ def respond(input: str):
         for value in values:
             st.write(value)
     else:
-        print(input)
-        key = input
-        st.write("Question is not present in the knowledge base!\nCould you please enter the appropriate answer for the question below-")
-        answer = st.text_input("Answer")
-        add = st.button("Add answer")
-        if (add):
-            knowledge_base[key] = [answer]
+        st.write("We don't have appropriate answer for the inquiry right now !")
+        
 
 if __name__ == "__main__":
-    input = st.text_input("Enter a query here-")
+    input = st.text_input("Ask College Companion 🤗")
     input = input.lower()
     col1, col2 = st.columns([1,0.1])
     with col1:
