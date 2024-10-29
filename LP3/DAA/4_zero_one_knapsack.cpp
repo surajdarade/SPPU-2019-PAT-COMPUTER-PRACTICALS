@@ -1,6 +1,7 @@
-// # Below are two approaches of Dynamic Programming
+// # Below are three approaches of Dynamic Programming
 // # 1. Memoization
 // # 2. Tabulation
+// # 3. Tabulation + Space Optimization
 
 // # You can use any one.
 
@@ -98,6 +99,55 @@ int main() {
 
     return 0;
 }
+
+// 3. Tabulation + Space Optimization
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int knapsack_01(int n, vector<int>& values, vector<int>& weights, int W) {
+    vector<int> prev(W + 1, 0), curr(W + 1, 0);
+
+    for (int i = 0; i < n; ++i) {
+        for (int w = 0; w <= W; ++w) {
+            if (weights[i] <= w) {
+                curr[w] = max(prev[w], prev[w - weights[i]] + values[i]);
+            } else {
+                curr[w] = prev[w];
+            }
+        }
+        prev = curr;
+    }
+
+    return prev[W];
+}
+
+int main() {
+    int n;
+    cout << "Enter the number of items: ";
+    cin >> n;
+
+    vector<int> values(n), weights(n);
+    for (int i = 0; i < n; ++i) {
+        cout << "Enter value of item " << (i + 1) << ": ";
+        cin >> values[i];
+        cout << "Enter weight of item " << (i + 1) << ": ";
+        cin >> weights[i];
+    }
+
+    int W;
+    cout << "Enter the capacity of the knapsack: ";
+    cin >> W;
+
+    int max_value = knapsack_01(n, values, weights, W);
+    cout << "Maximum value: " << max_value << endl;
+
+    return 0;
+}
+
+
 
 
 // # Sample Input and Output
