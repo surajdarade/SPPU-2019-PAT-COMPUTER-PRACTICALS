@@ -1,1 +1,2 @@
-DSBDAL LP2
+# TE - SEM VI
+# BE - SEM VII
